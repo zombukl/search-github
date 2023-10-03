@@ -1,0 +1,87 @@
+body {
+    background-color: #C4C4C4;
+}
+#app{
+    display: flex;
+    flex-direction: column;
+
+    
+}
+#app h1 {
+    margin: auto;
+}
+#app .search-line {
+    width: 500px;
+    
+    margin: 20px auto 0px auto;
+    
+}
+#app .search-input{
+    width: 496px;
+    height: 62px;
+    font-size: 48px;
+    border: 0px;
+    padding-left: 6px;
+}
+#app .main {
+    margin: auto;
+}
+#app .repos{
+    width: 500px;
+    height: auto;
+    margin: 0;
+}
+#app .repo {
+    list-style-type: none;
+    font-size: 30px;
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    padding-left: 6px;
+}
+#app .repo:last-child{
+    border-bottom: 2px solid black;
+}
+#app .repo:hover {
+    background-color: #65CDF9;
+    cursor: pointer;
+}
+#app .repo::first-letter{
+    text-transform: uppercase;
+}
+.repos{
+    padding: 0;
+}
+.selected-list{
+    padding: 0;
+    position: absolute;
+    top: 360px;
+}
+#app .selected-repo{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 101px;
+    background-color: #E27BEB;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    font-size: 24px;
+}
+#app .selected-repo:last-child{
+    border-bottom: 1px solid black;
+}
+#app .selected-repo span{
+    padding: 4px 0px 0px 16px;
+}
+ #close-btn{
+    cursor: pointer;
+    position: relative;
+    transform: translate(440px, -65px);
+    
+}
+#close-btn {
+    width: 40px;
+    min-height: 40px;
+    background-image: url('./src/img/crosslinear.svg');
+}
